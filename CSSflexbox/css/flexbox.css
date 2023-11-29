@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu-container{
+    color: #fff;
+    background-color: #5995da;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    /* border: 1px solid #fff; */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+.login{
+    margin-left: 20px;
+}
+
+
+.header-container{
+    color: #5995da;
+    background-color: #d6e9fe;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    width: 900px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* flex item alignment
+    PROPERTIES
+    center
+    flex-start   (top)
+    flex-end      (bottom)
+    stretch
+    baseline
+
+    SYNTAX
+    .social,
+    .subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    } 
+*/
+
+
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+}
+
+.photo-grid-item{
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.first-item{
+    order: 2;
+}
+
+/* .last-item{
+    order: -3;
+} */
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
+}
+
+/* SUMMARY 
+Use display: flex; to create a flex container.
+Use justify-content to define the horizontal alignment of items.
+Use align-items to define the vertical alignment of items.
+Use flex-direction if you need columns instead of rows.
+Use the row-reverse or column-reverse values to flip item order.
+Use order to customize the order of individual elements.
+Use align-self to vertically align individual items.
+Use flex to create flexible boxes that can stretch and shrink.
+*/
